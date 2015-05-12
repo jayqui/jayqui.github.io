@@ -26,7 +26,7 @@ div.row1 {
 }
 #maincontent {
   background-color: rgba(102,46,255,1);
-  border: 3px dashed rgba(26,113,232,1);
+  border: 3px dashed rgba(256,113,232,1);
   position: relative;
   top: 150px;
 }
