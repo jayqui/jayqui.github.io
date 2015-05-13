@@ -56,13 +56,22 @@ h4 {
 }
 p {
   text-align: justify;
+  font-family: "Calibri", serif;
+  font-size: 1.1em;
+  line-height: 97%;
+}
+p a {
+  text-decoration: none;
+  color: rgba(160,0,180,1);
 }
 em {
   font-weight: bold;
   color: rgba(220,100,0,1);
 }
+code {
+  background-color: rgba(220,100,0,.04);
+}
 strong code {
-  color: rgba(220,100,0,1);
   font-size: 1em;
 }
 a#h5footer {
