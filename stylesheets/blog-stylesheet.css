@@ -57,9 +57,13 @@ h4 {
 p {
   text-align: justify;
 }
+em {
+  font-weight: bold;
+  color: rgba(220,100,0,1);
+}
 strong code {
-  color: rgba(200,0,0,1);
-  font-size: 1.3em;
+  color: rgba(220,100,0,1);
+  font-size: 1em;
 }
 a#h5footer {
   text-align: center;
