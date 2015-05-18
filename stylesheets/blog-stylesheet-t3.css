@@ -71,7 +71,8 @@ em {
   color: rgba(220,100,0,1);
 }
 code {
-  background-color: rgba(220,100,0,.04);
+  font-size: 1.08em;
+  background-color: rgba(220,100,50,.1);
 }
 strong code {
   font-size: 1em;
@@ -79,4 +80,15 @@ strong code {
 a#h5footer {
   text-align: center;
   text-decoration: none;
+}
+main section ol li p code {
+  margin-left: 50px;
+  background-color: #404040;
+  color: white;
+  padding: 5px;
+  text-align: left;
+  display: block;
+}
+main section ol li {
+  margin-bottom: 10px;
 }
