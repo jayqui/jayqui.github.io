@@ -1,0 +1,91 @@
+body {
+  margin: 0px;
+  background-color: #36417D;
+}
+header {
+  z-index: 100;
+  position: fixed;
+  top: 0%;
+  left: 0;
+  right: 0;
+  height: 130px;
+  /*border: 5px solid #8B8B8D;*/
+  background-color: #36417D;
+  /*background-image: url("Chicago.jpg")*/
+  text-align: center
+}
+header h1 {
+  color: #F3F3F5;
+  font-family: "Century Gothic", "Century", sans-serif;
+}
+header p {
+  color: #8B8B8D;
+  font-family: "Century Gothic", "Century", sans-serif;
+}
+div {
+  position: relative;
+  /*border: 1px solid black;*/
+  text-align: center;
+  display: inline-block;
+}
+div.left {
+  width: 33%;
+}
+div.middle {
+  width: 33.5%;
+}
+div.right{
+  position: relative;
+  right: 0;
+  width: 33%;
+}
+div.row1 {
+  margin: -2px;
+  /*width: 32%;*/
+  height: 300px;
+  color: #F3F3F5;
+  font-family: "Century Gothic", "Century", sans-serif;
+}
+#maincontent {
+  background-color: #601B00;
+  /*border: 3px dashed rgba(256,113,232,1);*/
+  position: relative;
+  top: 150px;
+  line-height: 280px;
+}
+#blogbar {
+  background-color: aqua;
+  position: relative;
+  top: 150px;
+  right: 0;
+  left: 0;
+  height: 150px;
+  border: 5px dashed yellow;
+}
+#bloglogo {
+  background-color: yellow;
+  position: relative;
+  left: 50px;
+  top: 25px;
+  width: 100px;
+}
+section li {
+  margin-left: 50%;
+}
+#blogbar p {
+  margin-top: -15px;
+  text-align: right;
+  font-style: italic;
+}
+footer {
+  position: absolute;
+  /*top: 150px;*/
+  bottom: 0;
+  right: 0;
+  left: 0;
+  /*border: 3px dashed rgba(102,46,255,1);*/
+  text-align: center;
+  /*background-color: rgba(128,0,128,0.5);*/
+  color: #8B8B8D;
+  font-family: "Century Gothic", "Century", sans-serif;
+}

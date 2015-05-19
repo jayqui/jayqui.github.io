@@ -1,0 +1,419 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"num",
+				"number_with_delimiter"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"count",
+				"count_between"
+			],
+			[
+				"upp",
+				"upper_bound"
+			],
+			[
+				"low",
+				"lower_bound"
+			],
+			[
+				"array_",
+				"array_concat"
+			],
+			[
+				"arr",
+				"array_1"
+			],
+			[
+				"ze",
+				"zero_thru_nine"
+			],
+			[
+				"nu",
+				"num_2"
+			],
+			[
+				"n",
+				"num_2"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"text",
+				"text-decoration"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"s",
+				"SublimeREPL: Ruby"
+			],
+			[
+				"sublimelin",
+				"SublimeLint: Show All Errors"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"su",
+				"SublimeREPL: Ruby"
+			],
+			[
+				"subl",
+				"SublimeREPL: Ruby"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 299.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Jay/Documents/DBC/jayqui.github.io/stylesheet-keyboard.css",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/1_landing_page.html",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/stylesheet-b.css",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/index.html",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/stylesheet",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-2/week-4/acct-groups/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-2/week-4/acct-groups/make_accty_gp_arr.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-2/week-4/acct-groups/README.md",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/blog/t4-enumerable-methods.html",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-2/week-4/acct-groups/acct_gp_prob_scrap.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-2/week-4/nums-commas-solo-challenge/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-2/week-4/group-research-methods/methods_spec.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-2/week-4/group-research-methods/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-2/week-4/group-research-methods/arr_find_scrap.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-2/week-4/group-research-methods/README.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-2/week-4/pad-array/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-2/week-4/nums-commas-solo-challenge/README.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/pre-week-4/separate_comma.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-2/week-4/nums-commas-solo-challenge/commas_scrap_1.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-2/week-4/pad-array/README.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/pre-week-4/1_pad.rb",
+		"/Users/Jay/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/pre-week-4/4_separate_comma",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/pre-week-4/1_pad",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/blog/allposts.html",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/blog/c3_thinking-style.html",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/blog/t3-arrays-hashes.html",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/19-factorial/README.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/19-factorial/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/15-longest-string/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/arrays/my_reflection.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/14-shortest-string/my_solution.rb",
+		"/Users/Jay/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/20-add-it-up/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/13-largest-integer/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/12-smallest-integer/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/6-math-methods/my_solution.rb",
+		"/Users/Jay/Desktop/factorial_recursive.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/18-define-hash/hash_sandbox.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/18-define-hash/README.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/18-define-hash/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/17-count-between/README.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/17-count-between/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/16-concatenate-arrays/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/16-concatenate-arrays/README.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/,",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/flow-control/my_reflection.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/11-simple-substrings/README.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/11-simple-substrings/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/10-leap-years/README.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/10-leap-years/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/9-triangle-side/README.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/9-triangle-side/triangle_side_spec.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/9-triangle-side/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/8-calculate-grade/README.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/8-calculate-grade/case_when_example.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/8-calculate-grade/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/7-good-guess/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/7-good-guess/README.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/analyze-errors/README.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/analyze-errors/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/methods/my_reflection.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/6-math-methods/README.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/5-format-address/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/5-format-address/README.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/4-defining-method/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/methods/better_num.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/methods/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/methods/full_name.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/.git/COMMIT_EDITMSG",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/numbers-letters/my_solution.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/3-local-variables/README.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/3-local-variables/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/1-defining-variables/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/exercises/2-simple-string-methods/my_solution.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/numbers-letters/minutes_in_decade.rb",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-3/numbers-letters/hrs_in_yr.rb",
+		"/Users/Jay/Library/Application Support/Sublime Text 2/Packages/User/SublimeREPL.sublime-settings",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/beginning-css/my",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/beginning-css/my_reflection.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/accountability-groups.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/gps1-1/my_reflection.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/gps1.1/phase-0-gps-1/README.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/gps1.1/phase-0-gps-1/awesome_page.md",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/stylesheets/blog-stylesheet.css",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/blog/t2-css-design.html",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/blog/blog-template.html",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/.git/COMMIT_EDITMSG",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/stylesheet.css",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/technical-blog.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/testing-and-maintenance/my_reflection.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/blog-template/my_reflection.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/blog-template/blog-template.html",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/blog/all",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/your-website-solo-challenge/my_reflection.md",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/blog/index.html",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/blog/t1-git-blog.html",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/blog/c1-chefs-kitchen.html",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/your-website-solo-challenge/stylesheet.css",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/your-website-solo-challenge/index.html",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/your-website-solo-challenge/blog/index.html",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/beginning-html/my-berkshire-site.html",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/wireframing/my_reflection.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/beginning-html/my_reflection.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/chrome-devtools/css-positioning.css",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/chrome-devtools/my_reflection.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/beginning-css/my-berkshire-stylesheet.css",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/beginning-html/css2.css",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/beginning-html/berkclone2.html",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/beginning-html/css2",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/site-planning/my_reflection.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/wireframing/wireframing-notes.txt",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/site-planning/notes on web design.txt",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/t1-git-blog.html",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-1/new-repo/my_reflection.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-1/cli-exploration/my_reflection.md",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/LICENSE",
+		"/Users/Jay/Documents/DBC/jayqui.github.io/README.md",
+		"/Users/Jay/hello.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-1/set-remotes/my_reflection.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-1/tracking-changes/my_reflection.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-1/think-about-time/my_reflection.md",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/beginning-html/berkclone.html",
+		"/Users/Jay/Documents/DBC/Phase0/jqsandbox/gracias.html",
+		"/Users/Jay/Documents/DBC/Phase0/sbox4/.git/MERGE_MSG",
+		"/Users/Jay/Documents/DBC/Phase0/sbox3/hello3.html",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-2/beginning-html/stylesheet.css",
+		"/Users/Jay/Documents/DBC/Phase0/phase-0-unit-1/week-1/fork-clone/my_reflection.md"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"50px",
+			"36417D",
+			"a_result",
+			"a_",
+			"## - ",
+			"strong",
+			"hodgepodge",
+			",\"",
+			"#new",
+			",\"",
+			",",
+			"num",
+			"puts",
+			"[by myself, with: ].",
+			"puts",
+			"- ",
+			"h6",
+			"dfn",
+			"- ",
+			"blog/index",
+			"h3",
+			"relative",
+			"blue",
+			"- ",
+			"##### - ",
+			"##### -",
+			"mockflow",
+			"_",
+			"- ",
+			"metric",
+			"- ",
+			"##### * ",
+			"##### - ",
+			"##### -",
+			".",
+			"* ",
+			"</p>",
+			"<p>",
+			"Link Text",
+			"#### ",
+			"### ",
+			"## ",
+			"—"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"3C4266",
+			"results",
+			"",
+			"##### - ",
+			"em",
+			"nihilism",
+			", \"",
+			"word",
+			"p ",
+			"by myself.",
+			"print",
+			"##### ",
+			"h5",
+			"code",
+			"mark",
+			"##### ",
+			"blog/allposts",
+			"h5",
+			"##### ",
+			"",
+			"##### ",
+			"",
+			"<br>",
+			"Text",
+			"##### ",
+			"#### ",
+			"### ",
+			"--"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 74.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 185.0,
+	"status_bar_visible": true
+}

@@ -1,33 +1,61 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
-<title>Jay Quigley</title>
-<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-
+<head>
+	<meta charset="UTF-8">
+	<title>Jay Quigley</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet-keyboard.css"/>
+</head>
 <body>
   <header>
       <h1>Jay Quigley</h1>
-      <p>web developer | philosopher | effective altruist</p>
+      <p><a href="#">web developer</a> | <a href="#">philosopher</a> | <a href="#">effective altruist</a></p>
   </header>
 
-  <main>
-      <section id="maincontent">
-          <div class="row1">Effective Altruism</div>
-          <div class="row1">Web Development</div>
-          <div class="row1">Other Projects</div>
-      </section >
-      <section id="blogbar">
-        <a href="blog/allposts.html"><div id="bloglogo">Technication: A Blog</div></a>
-        <ul>
-          <p>When I learn how to sync this, this will be a nifty way to show the lastest 2-4 posts:<p>
-          <li><a href="#">Post2 (date2)</a></li>
-          <li><a href="#">Post1 (date1)</a></li>
-        </ul>
-        <p><a href="blog/allposts.html">See all posts . . .</a></p>
-      </section>
-  </main>
+	<!-- <div id="dull-bkgd"></div> -->
+
+	<img id="jq-key" src="assets/keys/JQ.png">
+
+	<div id="top-keys-container">
+		<img id="first-row-spacer" src="assets/keys/P(2).png">
+			<a href="html/portfolio.html">
+				<figure>
+					<img id="w-key" src="assets/keys/W(2).png" href="$">
+					<figcaption>web development</figcaption>
+				</figure>
+			</a>
+			<a href="html/ea.html">
+				<figure>
+					<img id="ea-key" src="assets/keys/EA.png">
+					<figcaption>effective altruism</figcaption>
+				</figure>
+			</a>
+			<a href="html/philosophy.html">
+				<figure>
+					<img id="phi-key" src="assets/keys/phi.png">
+					<figcaption>philosophy</figcaption>
+				</figure>
+			</a>
+
+	</div>
+	<div id="second-row-keys-container">
+		<img id="second-row-spacer" src="assets/keys/P(2).png">
+
+			<a href="html/other_stuff.html">
+				<figure>
+					<img id="p-key" src="assets/keys/P(2).png">
+					<figcaption>other projects</figcaption>
+				</figure>
+			</a>
+			<a href="blog/allposts.html">
+				<figure>
+					<img id="b-key" src="assets/keys/B_key.png">
+					<figcaption>blog</figcaption>
+				</figure>
+			</a>
+			
+	</div>
 
   <footer>
-      <p>about | links</p>
-      <p>Twitter | GitHub | LinkedIn | Fb | G+ | Skype</p>
+      <p id="p1">about | links</p>
+      <p>GitHub | LinkedIn | Twitter | Facebook | Google+ | Skype</p>
   </footer>
 </body>
