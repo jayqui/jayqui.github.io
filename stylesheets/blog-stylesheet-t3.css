@@ -87,7 +87,26 @@ main section ol li p code {
   color: white;
   padding: 5px;
   text-align: left;
+}
+blockquote code {
+  display: block;  
+  /*margin-left: 50px;*/
+  background-color: #404040;
+  color: white;
+  padding: 5px;
+  text-align: left;
   display: block;
+}
+pre code {
+  display: block;  
+  margin-left: 50px;
+  background-color: #404040;
+  color: white;
+  padding: 5px;
+  text-align: left;
+  display: block;
+  white-space: pre-wrap;
+  padding-bottom: 0.5em;
 }
 main section ol li {
   margin-bottom: 10px;
