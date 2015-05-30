@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+  <!-- Insert page title & ensure it matches post title -->
+  <title>Title</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet-keyboard.css">
+</head>
+
+<a id="headerlink" href="https://jayqui.github.io/blog/allposts.html"><h1>Technication</h1></a>
+
+<!-- <div id="tagline_div"><p>Chronicles of the long-delayed programming education of <a href="https://jayqui.github.io">Jay Quigley.</a></div> -->
+
+<main>
+  <!-- Insert title below -->
+  <h1>Title</h1>
+  <!-- Subtitle, if you want it -->
+  <h3>Subtitle</h3>
+  <!-- Date -->
+  <h4>Date</h4>
+
+  <section>
+    <p>
+      A class is essentially a collection of features shared by individual objects.  (All objects <em>instances</em>, sometimes called or <em>members, </em>of a class.)  Usually (in Ruby, anyway) a class consists mostly of method definitions.  This collection of methods defines the behaviors and characteristics that will be common to any member of the class.
+    </p>
+    <p>
+      For example, suppose I want to create some individual dog objects named <code>sparky</code>, <code>beethoven</code>, and <code>jaws</code>.
+    </p>
+    <p>
+      I could use the following code to define the class (look below it to see how I would use it).
+    </p>
+    <pre><code>
+      class Dog
+        attr_reader :name, :breed
+        attr_accessor :age, :length, :height, :weight
+
+        def initialize(name, breed="", age=1, length=90, height=30, weight=9)
+          @name = name.capitalize
+          @breed = breed.capitalize
+          @age = age
+          @length = length
+          @height = height
+          @weight = weight
+        end
+
+        def inspect
+          "A #{@breed} dog named #{@name} aged #{@age} years, measuring #{@length} by #{@height} cm and weighing #{@weight} kg."
+        end
+
+        @@calls_by_breed = {"Collie" => "Woof!", "Dachshund" => "Arf!", "Rottweiler" => "Grrr...", "Saint Bernard" => "Bow Wow!"}
+        def speak
+          "#{@name} says #{@@calls_by_breed[@breed]}!"
+        end
+
+        def growth_hormone
+          @length *= 2
+          @height *= 2
+          @weight *= 2
+          puts "#{@name} has doubled in size!"
+          self.inspect
+        end
+
+        def hibernate_for_a_year
+          @age += 1
+          self.inspect
+        end
+
+      end
+    </code></pre>
+    <p>
+      Things to notice:
+        <ul>
+          <li><code>class Dog</code> makes it clear that I'm defining a class.</li>
+          <li>When an instance is created, an <code>initialize</code> method is automatically called to create the new object.</li>
+          <li>The <code>inspect</code> method is automatically returned on the new object. I've chosen to redefine the <code>Object</code> class's native <code>inspect</code> method to make clearer the traits of the object being created.</li>
+        </ul>
+    </p>
+    <p>
+      To get started using the file, we load the file in a Ruby interpreter (such as irb or pry):
+    </p>
+    <pre><code>
+      >> load 'dog.rb'
+      => true
+    </code></pre>
+    <p>
+      And then we create a new dog named sparky:
+    </p>
+    <pre><code>
+      >> sparky = Dog.new("Sparky","Collie")
+      => A Collie dog named Sparky aged 1 years, measuring 90 by 30 cm and weighing 9 kg.
+    </code></pre>
+    <p>
+      Notice how the <code>inspect</code> method call on the new <code>sparky</code> object is what's returned.
+    </p>
+    <p>
+      Notice too that <code>initialize</code> is defined with a lot of default parameters, so that if <code>age</code>, <code>height</code>, <code>weight</code>, or <code>length</code> aren't specified, they will be given a value anyway.  But we could specify those values:
+    </p>
+    <pre><code>
+      >> beethoven = Dog.new("Beethoven","Saint Bernard",10,180,120,45)
+      => A Saint bernard dog named Beethoven aged 10 years, measuring 180 by 120 cm and weighing 45 kg.
+      > jaws = Dog.new("Jaws","Rottweiler",3,140,70,36)
+      => A Rottweiler dog named Jaws aged 3 years, measuring 140 by 70 cm and weighing 36 kg.
+    </code></pre>
+    <p>
+      The <code>attr-reader</code> attribute means that we can read the details of the attribute specified (here, <code>name</code> and <code>breed</code> can be read but not changed), and the <code>attr-accessor</code> attribute means that we can both read and update the details of the attributes specified (here, <code>age</code>, <code>height</code>, <code>weight</code>, or <code>length</code>).
+    </p>
+    <pre><code>
+      >> sparky.name
+      => "Sparky"
+      >> sparky.age
+      => 1
+      >> sparky.age = 13
+      => 13
+      >> sparky.inspect
+      => "A Collie dog named Sparky aged 13 years, measuring 90 by 30 cm and weighing 9 kg."
+    </code></pre>
+    <p>
+      We've just changed Sparky's age. But we can't change his breed or name:
+    </p>
+    <pre><code>
+      >> sparky.name = "Doofushead"
+      NoMethodError: undefined method `name=' for #<Dog:0x007f8c829a2408>
+      >> sparky.breed = "Chihuahua"
+      NoMethodError: undefined method `breed=' for #<Dog:0x007f8c829a2408>
+    </code></pre>
+    <p>
+      The other methods work on the other dogs as well:
+    </p>
+    <pre><code>
+      >> sparky.speak
+      => "Sparky says Woof!!"
+      >> beethoven.speak
+      => "Beethoven says Bow Wow!!"
+      > jaws.speak
+      => "Jaws says Grrr...!"
+      
+      >> sparky.growth_hormone
+      Sparky has doubled in size!
+      => "A Collie dog named Sparky aged 1 years, measuring 180 by 60 cm and weighing 18 kg."
+      >> sparky.hibernate_for_a_year
+      => "A Collie dog named Sparky aged 2 years, measuring 180 by 60 cm and weighing 18 kg."
+    </code></pre>
+  </section>
+</main>
+
+<a id="h5footer" href="../blog/allposts.html"><h5>Back to All Technication Posts</h5></a>

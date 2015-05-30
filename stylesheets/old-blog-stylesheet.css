@@ -71,8 +71,7 @@ em {
   color: rgba(220,100,0,1);
 }
 code {
-  font-size: 1.08em;
-  background-color: rgba(220,100,50,.1);
+  background-color: rgba(220,100,0,.04);
 }
 strong code {
   font-size: 1em;
@@ -81,25 +80,3 @@ a#h5footer {
   text-align: center;
   text-decoration: none;
 }
-main section ol li p code {
-  margin-left: 50px;
-  background-color: #404040;
-  color: white;
-  padding: 5px;
-  text-align: left;
-}
-pre code {
-  display: block;  
-  margin-left: 50px;
-  background-color: #404040;
-  color: white;
-  padding: 5px;
-  text-align: left;
-  display: block;
-  white-space: pre-wrap;
-  padding-bottom: 0.5em;
-}
-main section ol li {
-  margin-bottom: 10px;
-}
-
