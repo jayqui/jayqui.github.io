@@ -1,0 +1,1 @@
+document.getElementById("post_title").innerHTML = (document.getElementById("title").innerHTML)
