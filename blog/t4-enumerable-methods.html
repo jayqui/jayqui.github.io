@@ -36,7 +36,7 @@ fruits.group_by { |x| vowels.include?(x[0]) }
 # =&gt; {true=&gt;["apple", "elderberry"], false=&gt;["banana", "cherry", "dragonfruit"]}</code></pre>
     
     <p><code>#cycle</code> takes an <code>Integer</code> as a parameter and simply runs through the collection, executing a code block that number of times on the collection. For example:</p>
-    <pre><code>fruits.cycle(2) { |x| puts "I WANT A(N) #{x}" if vowels.include?(x[0]) }
+    <pre><code>fruits.cycle(2) { |x| puts "I WANT AN #{x}" if vowels.include?(x[0]) }
 # =&gt;
 # I WANT AN apple
 # I WANT AN elderberry

@@ -105,13 +105,14 @@ code {
 pre code {
   display: block;  
   margin-left: 50px;
+  margin-bottom: 0.6em;
+  padding-bottom: 0.5em;
   background-color: #404040;
   color: white;
   padding: 5px;
   text-align: left;
   display: block;
   white-space: pre-wrap;
-  padding-bottom: 0.5em;
 }
 .top-keys {
   /*display: block;*/
@@ -178,15 +179,15 @@ tr td:first-of-type {
 table, th, td {
   margin-top: 1em;
   margin-bottom: 2em;
-  border-left: 1px dotted #8B8B8D;
-  border-right: 1px dotted #8B8B8D;
+  border-left: 1px solid rgb(210,210,210);
+  border-right: 1px solid rgb(210,210,210);
   text-align: center;
 }
 th {
   padding: 0.6em 0.3em;
 }
 td a{
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: block;
   padding: 0.6em 0.1em;
