@@ -100,13 +100,13 @@
 
       p bandit.speak  # => "Bandit says Woof!!"
     </code></pre>
-    <p>The two methods invoked here, <code>inspect</code> and <code>speak</code> are simply inherited from the parent class, <code>Dog</code>.</p>
+    <p>The two methods invoked here, <code>inspect</code> and <code>speak</code>, are simply inherited from the parent class, <code>Dog</code>.</p>
     <p>The point of creating the child class was that we wanted to be able to add additinal functionality. That's precisely what the new methods of <code>FrisbeeTerrier</code> do for us:</p>
     <pre><code>
       bandit.vertical = 7
       p bandit.vertical # => "Bandit can jump 7 feet in the air!"
       bandit.frisbees_can_catch = 5 # => Bandit trains to catch 5 frisbees at once!
-      p bandit.catch_frisbees # => "Bandit jumped Bandit can jump 7 feet in the air! feet in the air and caught 1 frisbees!"
+      p bandit.catch_frisbees # => "Bandit jumped 7 feet in the air and caught 1 frisbees!"
     </code></pre>
     <p>Bah, Bandit just got unlucky this time.</p>
 
