@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <head>
   <!-- Insert page title & ensure it matches post title -->
-  <title id="title">Title</title>
+  <title id="title">Ruby to JS transition cheat sheat</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet-keyboard.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet-keyboard-t7.css">
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans|Roboto' rel='stylesheet' type='text/css'>
 </head>
@@ -27,20 +27,133 @@
   <!-- Insert title below -->
   <h1 id="post_title">(This gets replaced through JS magick)</h1>
   <!-- Subtitle, if you want it -->
-  <h3>Subtitle</h3>
+  <!-- <h3>Subtitle</h3> -->
   <!-- Date -->
-  <h4>Date</h4>
+  <h4>2015.6.14</h4>
 
   <section>
-    <p>
-      If you want to see a link, <a href="#">here</a> is one.
-    </p>
-    <p>
-      Here is a paragraph with <code>code def 2 "hi" 2.0</code> in it.
-    </p>
-    <pre><code>This is preformatted code. def 2 "hi" 2.0)</code></pre>
+    <p>Here's a list of hints and things to remember for new programmers transitioning from Ruby to JavaScript.</p>
+    <p>This is a pretty incomplete list, but I will probably continually add to it.</p>
   </section>
 </main>
+
+    <table>
+      <tr>
+        <th>Ruby has but JS lacks</th>
+        <th>example</th>
+        <th>Workaround in JS</th>
+        <th>example</th>
+      </tr>
+      <tr>
+        <td>string interpolation</td>
+        <td><code>"#{variable1} and #{variable2} can just be written into a string"</td>
+        <td>string concatenation</td>
+        <td><code>variable1 + "and" + variable2 + "must be added to the string with the plus sign"</code> (Note, this works even if the variables aren't srtrings because JS does automatic type conversions of these variables to strings. That <em>wouldn't</em> work with Ruby.)</td>
+      </tr>
+      <tr>
+        <td>negative indexing for arrays</td>
+        <td><code>arr = [4,5,6] &amp;&amp; arr[-1] == -6</code></td>
+        <td></td>
+        <td><code>arr[arr.length - 1]</code></td>
+      </tr> 
+      <tr>
+        <td><code>arr.include?</code> method</td>
+        <td><code>arr = [4,5,6] &amp;&amp; arr.include?("str") == false</code></td>
+        <td>Use the detail that <code>array.indexOf(something not in the array)</code>equals <code>-1</code></td>
+        <td><code>arr.indexOf("str")!= -1</code></td>
+      </tr>
+      <tr>
+        <td><code>arr.delete(thing)</code> method</td>
+        <td>if <code>arr = [4,5,6,6,6,6]</code> and <code>arr.delete(6)</code> is called then <code>6</code> is returned and <code>arr</code> becomes <code>[4,5]</code></td>   
+        <td>Iterate through the array backwards (backwards to deal with shrinking array size) and use <code>splice</code> to delete the item each time it's found. Cf. <a href="http://stackoverflow.com/questions/5767325/remove-specific-element-from-an-array">here</a>.</td>
+        <td>
+          <pre><code>
+for(var i = array.length - 1; i >= 0; i--) {
+  if(array[i] === number) {
+    array.splice(i, 1);
+  }
+}
+          </code></pre>
+          This returns <code>[6]</code> and <code>array</code> becomes <code>[4,5]</code>
+        </td>
+      </tr>
+    </table>
+
+<main>
+  <p>The first things that JS has or requires but Ruby does not are obvious:</p>
+</main>
+
+<table>
+  <tr>
+    <th>JS has but Ruby lacks</th>
+    <th>example</th>
+    <th>Workaround in Ruby</th>
+    <th>example</th>
+  </tr>
+  <tr>
+    <td>need for explicit return values</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>need for semicolons to end expressions</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>need for brackets to demarcate blocks</td>
+    <td></td>
+    <td>brackets or <code>do...end</code> to demarcate blocks</td>
+    <td></td>
+  </tr>
+</table>
+
+<main>
+  <p>And here are some slightly less obvious things:</p>
+</main>
+
+<table>
+  <tr>
+    <th>JS has but Ruby lacks</th>
+    <th>example</th>
+    <th>Workaround in Ruby</th>
+    <th>example</th>
+  </tr>
+  <tr>
+    <td>No arity: extra arguments to functions are just ignored in JS, but would raise an error with Ruby methods</td>
+    <td>
+      <pre><code>
+function fname(param1){
+  // cool code here;
+}
+
+fname(3,4,5,6,7);
+// just runs fname(3)
+      </code></pre>
+    </td>
+    <td>splat operator</td>
+    <td>
+      <pre><code>
+def mname(*args)
+  args.each do |arg|
+    # do stuff to arg
+  end
+end
+
+mname(3,4,5,6,7)
+# sends the array [3,4,5,6,7] through #mname
+      </code></pre>
+    </td>
+  </tr> 
+  <tr>
+    <td>automatic type conversions</td>
+    <td><code>'hi' + 5 // 'hi5'</code></td>
+    <td>explicit type conversions</td>
+    <td><code>'hi' + 5.to_s # => 'hi5'</code></td>
+  </tr> 
+</table>
 
 <a id="h5footer" href="../blog/allposts.html"><h4>Back to All Technication Posts</h4></a>
 <script src="../js/replacetitle.js"></script>
