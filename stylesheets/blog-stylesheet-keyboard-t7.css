@@ -99,18 +99,18 @@ code {
   /*margin-left: 50px;*/
   background-color: rgb(230,230,230);
   /*color: #F3F3F5;*/
-  padding: 4px;
+  padding: 0.2em;
   text-align: left;
 }
 pre code {
   display: block;  
   /*margin-left: 50px;*/
-  margin-bottom: 0.6em;
-  padding-bottom: 0.5em;
+  /*margin-bottom: 0.6em;*/
+  /*padding-bottom: 0.5em;*/
   background-color: rgb(230,230,230);
   /*background-color: #404040;*/
   /*color: white;*/
-  padding: 5px;
+  /*padding: 5px;*/
   text-align: left;
   display: block;
   white-space: pre-wrap;
@@ -190,8 +190,9 @@ td {
   width: 25%;
 }
 td a{
-  width: 90%;
+  text-decoration: none;
+/*  width: 90%;
   height: 100%;
   display: block;
-  padding: 0.6em 0.1em;
+  padding: 0.6em 0.1em;*/
 }
