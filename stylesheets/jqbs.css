@@ -94,7 +94,7 @@ figure:hover img {
 .key-figure p mark {
 	color: #36417d;
 	/*background-color: rgba(214,230,244,0.5);*/
-	background-color: white;
+	background-color: transparent;
 	font-size: 1.3em;
 	font-weight: 700;
 	text-shadow: none;
