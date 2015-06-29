@@ -1,81 +1,263 @@
 <!DOCTYPE html>
-<head>
-	<meta charset="UTF-8">
-	<title>Jay Quigley</title>
-	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet-keyboard.css"/>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Example</title>
 
-  <!-- favicon compatible w iOS, Android, Windows 8, via http://realfavicongenerator.net  -->
-  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  
-</head>
-<body>
-  <header>
-      <h1>Jay Quigley</h1>
-      <p><a href="#">web developer</a> | <a href="#">philosopher</a> | <a href="#">effective altruist</a></p>
-  </header>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- <div id="dull-bkgd"></div> -->
+    <link href="stylesheets/jqbs.css" rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'> <!--Google Fonts: Raleway-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> <!--Bootstrap CSS-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  <!--jQuery-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> <!--Bootstrap JS-->
+  </head>
 
-	<img id="jq-key" src="assets/keys/JQ.png">
+  <body>
+    <header>
+      <div id="titlecontainer" class="row">
+        <div class="col-sm-7">
+          <h1 id="titlename">Jay Quigley &nbsp;&nbsp;<small>web developer</small></h1>
+          <h1 class="subtitle"><small> ...... philosopher ...... effective altruist ...... musician ...... vegan athlete ......</small></h1>
+          <h1 id="location" class="subtitle"><small><em>Chicago, Illinois</em></small></h1>
+        </div>
+      </div>
 
-	<div id="top-keys-container">
-		<img id="first-row-spacer" src="assets/keys/P(2).png">
-			<a href="html/portfolio.html">
-				<figure>
-					<img id="w-key" src="assets/keys/W(2).png" href="$">
-					<figcaption>web development</figcaption>
-				</figure>
-			</a>
-			<a href="html/ea.html">
-				<figure>
-					<img id="ea-key" src="assets/keys/EA.png">
-					<figcaption>effective altruism</figcaption>
-				</figure>
-			</a>
-			<a href="html/philosophy.html">
-				<figure>
-					<img id="phi-key" src="assets/keys/phi.png">
-					<figcaption>philosophy</figcaption>
-				</figure>
-			</a>
+      <div id="keys-container" class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <a href="#bio">
+              <figure class="key-figure">
+                <img id="jq-key" class="keys img-responsive center-block" src="images/keys/JQ.png" href="$">
+                <p><mark>bio</mark></p>
+              </figure>
+            </a>
+          </div>
+          <div class="col-sm-2">
+            <a href="#portfo-intro">
+              <figure class="key-figure">
+                <img class="keys img-responsive center-block" src="images/keys/W(2).png" href="$">
+                <p><mark>web development</mark></p>
+              </figure>
+            </a>
+          </div>
+          <div class="col-sm-2">
+            <a href="#eabanner">
+              <figure class="key-figure">
+                <img class="keys img-responsive center-block" src="images/keys/ea.png" href="$">
+                <p><mark>effective altruism</mark></p>
+              </figure>
+            </a>
+          </div>
+        </div>
+        <div class="row indent-1">
+          <div id="keyboard-spacer" class="col-sm-1"></div>
+          <div class="col-sm-2" >
+            <a href="#other">
+              <figure class="key-figure">
+                <img class="keys img-responsive center-block" src="images/keys/phi.png" href="$">
+                <p><mark>philosophy &amp; other interests</mark></p>
+              </figure>
+            </a>
+          </div>
+          <div class="col-sm-2">
+            <a href="http://jayqui.github.io/blog/allposts.html">
+              <figure class="key-figure">
+                <img class="keys img-responsive center-block" src="images/keys/B.png" href="$">
+                <p><mark>tech blog</mark></p>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
 
-	</div>
-	<div id="second-row-keys-container">
-		<img id="second-row-spacer" src="assets/keys/P(2).png">
+<!--       <div class="col-xs-1">
+        <img src="./images/social_media_icons/github32.png" style="background-color: #36417d">
+        <img src="./images/social_media_icons/stack-overflow32.png" style="background-color: #36417d">
+        <img src="./images/social_media_icons/linkedin32.png" style="background-color: #36417d">
+      </div>
+      <div class="col-xs-1">
+        <img src="./images/social_media_icons/facebook32.png" style="background-color: #36417d">
+        <img src="./images/social_media_icons/googleplus32.png" style="background-color: #36417d">
+        <img src="./images/social_media_icons/twitter32.png" style="background-color: #36417d">
+      </div> -->
 
-			<a href="html/other_stuff.html">
-				<figure>
-					<img id="p-key" src="assets/keys/P(2).png">
-					<figcaption>other projects</figcaption>
-				</figure>
-			</a>
-			<a href="blog/allposts.html">
-				<figure>
-					<img id="b-key" src="assets/keys/B_key.png">
-					<figcaption>blog</figcaption>
-				</figure>
-			</a>
-			
-	</div>
+      <!--  ^  http://robby-designs.deviantart.com/art/Socialcircles-Free-social-icons-circular-347921678 -->
 
-  <footer>
-      <p id="p1">about | links</p>
-      <p>GitHub | LinkedIn | Twitter | Facebook | Google+ | Skype</p>
-  </footer>
-</body>
+    </header>
+
+    <div id="bio" class="container">
+      <p id="bio-1">
+        I enjoy using my analytical and empathic abilities in diverse ways
+      </p>
+      <p id="bio-2">
+        in languages like Ruby, JavaScript, and English
+      </p>
+      <p id="bio-3">
+        to solve difficult and novel problems.
+      </p>
+
+    </div>
+
+
+    <div id="portfo-intro" class="portfo-intro">
+      <p class="portfo-intro-p1">
+        Web Development Portfolio
+      </p>
+      <!-- <div id="portf-container"> -->
+      <div id="portf-container" class="container">
+        <div class="row">
+          <div class="portf-item col-sm-4">
+            <img class="portf-img" src='images/chxesc3.png'>
+            <a target="_blank" href="https://github.com/jayqui/portfolio/blob/master/chickenescape.js"><div class="portf-item-cover">
+              <h2>Chicken Escape <br><small>JavaScript</small></h2>
+            </div></a>
+          </div>
+<!--           <div class="portf-item col-sm-4">
+            <img class="portf-img" src='images/John.png'>
+            <a target="_blank" href="https://github.com/jayqui/portfolio/blob/master/chickenescape.js"><div class="portf-item-cover">
+              <h2>Chicken Escape <br><small>JavaScript</small></h2>
+            </div></a>
+          </div>
+          <div class="portf-item col-sm-4">
+            <img class="portf-img" src='images/Paul.png'>
+            <a target="_blank" href="https://github.com/jayqui/portfolio/blob/master/chickenescape.js"><div class="portf-item-cover">
+              <h2>Chicken Escape <br><small>JavaScript</small></h2>
+            </div></a>
+          </div> -->
+
+
+        </div>
+      </div>
+      <p class="portfo-intro-p2">
+        <a href="#">More coming soon......</a>
+      </p>
+    </div>
+
+
+      <div id="eabanner" class="subjectbanner">
+        <p>
+          <a target="_blank" href="http://www.ted.com/talks/peter_singer_the_why_and_how_of_effective_altruism?language=en" class="btn btn-default">Effective Altruism</a>
+        </p>
+      </div>
+
+      <!-- <div id="eawrap" class="container"> -->
+        <div id="eawrap" class="row">
+          <!-- <div class="col-sm-6"> -->
+            <div id="eadescrip" class="col-sm-6">
+              <h3>
+                I work to make a positive difference in the world:
+              </h3>
+              <p>
+                &#10084; &nbsp; I give <a target="_blank" href="http://myweb.fsu.edu/jgq07/html/non-academic_presentations.html">talks</a> about how to be a change agent
+              </p>
+              <p class="center">
+                . . . such as a recent talk at <a id="tedlink" href="https://www.youtube.com/watch?v=swI68y2oQ60">TEDxFSU</a>
+              </p>
+              <p>
+                &#10084; &nbsp; I donate a high percentage of the money that I make
+              </p>
+              <p class="center">
+                . . . to effective charities like those recommended by <a href="http://www.givewell.org/">GiveWell</a> and <a href="http://www.animalcharityevaluators.org/">Animal Charity Evaluators</a>
+              </p>
+              <p>
+                &#10084; &nbsp; I participate in the Effective Altruism community
+              </p>
+              <p class="center">
+                . . . including by keeping an <a href="https://21stcenturyaltruism.wordpress.com/">EA-themed blog</a>.
+              </p>
+            </div>
+          <!-- </div> end .col-sm-6 -->
+
+          <!-- <div class="col-sm-6"> -->
+          
+          <!-- </div> end .col-sm-6 -->
+
+          <div id="tedtalk" class="col-sm-6">
+            <a href="https://www.youtube.com/watch?v=swI68y2oQ60" target="_blank"><img id="ted-img" src="images/ted5.6.jpg"></a>
+          </div>
+          
+        </div> <!-- end #eawrap .row -->
+      <!-- </div> end .container -->
+      
+      <script type="text/javascript" src="js/ted-highlights.js"></script>
+
+    <div class="row">
+      
+      <div id="tedother" class="col-sm-6">
+        <blockquote class="blockquote Singerquot">
+          <p>
+            I believe that in this new world that we live in, we often have a responsibility . . . to actually go beyond the thou shalt nots -- that is, the not harming others -- 
+<!--           </p>
+          <p> -->
+            and say we can help others and we should be helping others.
+          </p>
+        </blockquote>
+      </div>
+
+      <div id="quotwrap" class="col-sm-6">
+        <blockquote class="Singerquot blockquote-reverse">
+          <!-- <p>* * * *</p> -->
+          <p>
+            All the arguments to prove man's superiority cannot shatter this hard fact: 
+
+<!--           </p>
+          <p> -->
+            in suffering the animals are our equals.
+          </p>
+        </blockquote>
+      </div> <!-- end #quotwrap -->
+
+    </div> <!-- end row -->
+
+    <p id="Singername">
+      -- <a href="http://www.brainyquote.com/quotes/authors/p/peter_singer.html">Peter Singer</a>
+    </p>
+
+    <div id="other" class="subjectbanner">
+      <p>
+        <a target="_blank" href="https://www.facebook.com/jay.quigley.35" class="btn btn-default">Other Interests</a>
+      </p>
+    </div>
+
+    <div class="container">
+      <div id="other-content" class="row">
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-default">Music</button>
+          <p>I'm a music fanatic. Shortly I'll have a link here to some new recordings.</p>
+        </div>
+        <div id="philosophy" class="col-sm-4" style="background-color:white">
+          <a type="button" class="btn btn-default" href="http://myweb.fsu.edu/jgq07/" target="_blank">Philosophy</a>
+           <p>I have an academic background in philosophy.  I completed my Ph.D in 2015.  Although I'm not currently teaching at the college level, I sometimes write about philosophical issues at places like my <a href="https://21stcenturyaltruism.wordpress.com/">effective altruism blog</a>, a separate <a href="https://quilosophy.wordpress.com/">philosophy blog</a>, and elsewhere on social media. I'm particularly interested in animal rights and the scientific and philosophical issues about the kinds of minds nonhuman animals have. You can see my academic website <a href="http://myweb.fsu.edu/jgq07/">here</a>.</p>
+        </div>
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-default">Sports</button>
+          <p>I'm a guru of ultimate frisbee. Some call me the throwin'est vegan.</p>
+        </div>
+      </div>
+    </div>
+
+      <footer class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <h3><a target="_blank" href="mailto:quigley.james.g@gmail.com" class="btn btn-default">Contact</a></h3>
+          <p>
+            <a href="mailto:quigley.james.g@gmail.com">Gmail</a> | <a href="https://github.com/jayqui/">GitHub</a> | <a href="https://www.linkedin.com/in/jamesgquigley">LinkedIn</a> | <a href="https://twitter.com/jay_quig">Twitter</a> | <a href="https://www.facebook.com/jay.quigley.35">Facebook</a> | <a href="https://plus.google.com/+JayQuigleyPlayQuickly/posts">Google+</a>
+            <!-- <a href="">Skype</a> -->
+          </p>
+          <p>
+            &copy; Jay Quigley, 2015 | <span id="making-verb">Constructed</span> with <span id="persev-adj">resolve</span> in <span id="place-made">the heart of the Midwest</span>.
+          </p>
+
+          <script type="text/javascript" src="js/wordplay.js"></script>
+
+          <p id="credits">
+            Unless noted here, all photos used here are mine and are not for redistribution. Keyboard image credit: <a href="https://commons.wikimedia.org/wiki/File:QWERTY_keyboard.jpg">Michael Maggs</a>; photo of deworming courtesy of <a href="http://www3.imperial.ac.uk/schisto">Schistosomiasis Control Initiative</a>; TED talk photo courtesy of Bob Howard; FSU Westcott fountain via <a href="https://www.flickr.com/photos/jerkalertproductions/10527854014">Stab At Sleep</a>.
+          </p>
+        </div>
+        <div class="col-sm-2"></div>
+      </footer>
+
+  </body>
+</html>
