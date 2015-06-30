@@ -320,7 +320,7 @@ figure:hover p mark {
 	/*margin-left: 50%;*/
 	width: 100%;
 	height: 100%;
-	/*filter: grayscale(0%);*/
+	filter: grayscale(0%);
 	-webkit-filter: grayscale(50%);
 	/*float: right;*/
 }
