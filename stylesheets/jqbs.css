@@ -214,16 +214,24 @@ figure:hover p mark {
 	font-size: 3.5vmin;
 	font-weight: 400;
 	font-style: italic;
-	text-align: right;
+	text-align: right !important;
 }
 
 .subjectbanner {
 	min-height: 200px;
-	line-height: 240px;
+	/*line-height: 240px;*/
+	padding-top: 79px;
+	padding-bottom: 79px;
+	margin: 0;
 	text-align: center;
 	/*border-top: 4px solid #36417d;*/
 }
+.subjectbanner-button {
+	margin: 0px !important;
+}
 #eabanner {
+	padding-bottom: 0px !important;
+
 	background-image: url("../images/SCI_light_blue.jpg");
 	background-color: transparent;
 	background-attachment: fixed;
@@ -239,23 +247,39 @@ figure:hover p mark {
 	background-position: center center;
 	background-repeat: no-repeat;
 }
-.subjectbanner p {
+.subjectbanner-text {
 	margin: -1px 0 0 0;
 	color: white;
 	display: inline-block;
 	vertical-align: middle;
 }
-.subjectbanner p a {
+.subjectbanner-text a {
 	color: #36417d;
 	background-color: rgba(220,220,220,0.5) !important;
 	font-size: 3em !important;
 	font-weight: 700;
 }
-.subjectbanner p a:hover {
+.subjectbanner-text a:hover {
 	color: #36417d;
 	background-color: rgba(54,65,125,0.5) !important;
 	font-size: 3em !important;
 	font-weight: 700;
+}
+#SCI-photo-credit {
+	margin: 1.5em 0 0 30%;
+  padding: 0.5em 1.5em 0.5em 0;
+	color: white;
+	background-color: rgba(54,65,125,0.5);
+	/*background-color: rgba(255,255,255,0.5);*/
+  font-style: italic;
+  font-size: 1.15em !important;
+  text-align: right;
+  line-height: 1em;
+}
+#SCI-photo-credit a {
+	color: white;
+	text-decoration: underline;
+	text-decoration-style: dotted;
 }
 #eawrap {
 	background-color: #B9B9BC;
