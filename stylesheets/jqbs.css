@@ -207,8 +207,12 @@ figure:hover p mark {
 	opacity: 0.85;
 }
 .portf-item-cover h2, .portf-item-cover h3 {
-	color: #B9B9BC;
+	/*color: #B9B9BC;*/
+	color: #FFF;
 	padding: 15% 0;
+}
+.portf-item-cover h2 small, .portf-item-cover h3 small {
+	color: #B9B9BC !important;
 }
 .portfo-intro-p2 {
 	font-size: 3.5vmin;
