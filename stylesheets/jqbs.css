@@ -140,7 +140,7 @@ figure:hover p mark {
 	background-repeat: no-repeat;
 	position: relative;
 }
-.portfo-intro {
+.portfolio {
 	background-image: url("../images/keyboard_washout.jpg");
 	background-color: transparent;
 	/*background-attachment: fixed;*/
@@ -158,12 +158,12 @@ figure:hover p mark {
 	/*border: 9px groove #36417d;*/
 	/*background-color: #D4EAFF;*/
 }
-.portfo-intro p {
+.portfolio p {
 	margin: 0;
 	padding: 25px;
 	color: #36417d;
 }
-.portfo-intro-p1 {
+.portfolio-p1 {
 	font-size: 5vmin;
 	font-weight: 700;
 }
@@ -214,7 +214,7 @@ figure:hover p mark {
 .portf-item-cover h2 small, .portf-item-cover h3 small {
 	color: #B9B9BC !important;
 }
-.portfo-intro-p2 {
+.portfolio-p2 {
 	font-size: 3.5vmin;
 	font-weight: 400;
 	font-style: italic;
