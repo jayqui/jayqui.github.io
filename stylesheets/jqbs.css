@@ -22,9 +22,6 @@ a {
 a:hover {
 	color: #8bb8df !important;
 	text-decoration: none !important;
-	/*text-shadow: 0px 1px 0.5px rgb(0,0,0);*/
-	/*text-shadow: 0.5px 0px 6.5px black;*/
-	/*text-shadow: none !important;*/
 }
 #titlecontainer {
 	padding-left: 3em;
@@ -45,7 +42,6 @@ a:hover {
 	font-size: 2.25em;
 }
 #location {
-	/*padding: 0px 0px 0px 50px;*/
 	font-size: 2.25em;
 }
 #keys-container {
@@ -53,8 +49,6 @@ a:hover {
 }
 img.keys {
 	width: 130px;
-	/*height: 130px;*/
-	/*margin-left: 0;*/
 }
 
 figure:hover img {
@@ -143,20 +137,10 @@ figure:hover p mark {
 .portfolio {
 	background-image: url("../images/keyboard_washout.jpg");
 	background-color: transparent;
-	/*background-attachment: fixed;*/
 	background-size: 100% 100%;
 	background-position: center center;
 	background-repeat: no-repeat;
 	position: relative;
-
-	/*border-top: 3px solid #36417d;
-	border-bottom: 3px solid #36417d;*/
-	/*border-top: 3px solid #000000;
-	border-bottom: 3px solid #000000;*/
-/*	border-top: 3px solid #344D89;
-	border-bottom: 3px solid #344D89;*/
-	/*border: 9px groove #36417d;*/
-	/*background-color: #D4EAFF;*/
 }
 .portfolio p {
 	margin: 0;
@@ -171,10 +155,6 @@ figure:hover p mark {
 	padding: 0;
 	margin-left: auto;
 	margin-right: auto;
-	/*min-width: 1250px;*/
-	/*margin: 0 3vw;*/
-	/*padding-left: -15px;*/
-	/*padding-right: -15px;*/
 }
 .portf-img {
 	width: 100%;
@@ -223,12 +203,10 @@ figure:hover p mark {
 
 .subjectbanner {
 	min-height: 200px;
-	/*line-height: 240px;*/
 	padding-top: 79px;
 	padding-bottom: 79px;
 	margin: 0;
 	text-align: center;
-	/*border-top: 4px solid #36417d;*/
 }
 .subjectbanner-button {
 	margin: 0px !important;
@@ -274,7 +252,6 @@ figure:hover p mark {
   padding: 0.5em 1.5em 0.5em 0;
 	color: white;
 	background-color: rgba(54,65,125,0.5);
-	/*background-color: rgba(255,255,255,0.5);*/
   font-style: italic;
   font-size: 1.15em !important;
   text-align: right;
@@ -287,7 +264,6 @@ figure:hover p mark {
 }
 #eawrap {
 	background-color: #B9B9BC;
-	/*background-color: black;*/
 }
 #eadescrip, #Singerquot {
 	margin: 0;
@@ -310,9 +286,6 @@ figure:hover p mark {
 	color: #36417d;
 	background-color: white;
 	margin: 50px 50px 15px 50px;
-	/*margin-bottom: 50px;*/
-/*	display: table-cell;
-	vertical-align: middle;*/
 }
 .Singerquot blockquote {
 }
@@ -326,31 +299,16 @@ figure:hover p mark {
 	text-align: center;
 }
 #tedtalk {
-	/*clear: both;*/
-
-	/*min-height: 330px;*/
 	min-height: 100px;
 	color: white;
-/*	background-color: #B9B9BC;
-*/
 	padding: 3vh 0 3vh 0;
 	float: right;
-	
-	/*background-image: url("images/ted5.3.jpg");*/
-	/*background-color: #D4EAFF;*/
-/*	background-attachment: fixed;
-	background-size: 60%;
-	background-position: center right;
-	background-repeat: no-repeat;*/
-
 }
 #ted-img {
-	/*margin-left: 50%;*/
 	width: 100%;
 	height: 100%;
 	filter: grayscale(0%);
 	-webkit-filter: grayscale(50%);
-	/*float: right;*/
 }
 
 .btn-default {
@@ -371,7 +329,6 @@ figure:hover p mark {
 	text-align: center;
 	margin-top: 5em;
 	margin-bottom: 5em;
-	/*min-height: 400px;*/
 }
 #other-content .col-sm-4 p {
 	margin: 0;
