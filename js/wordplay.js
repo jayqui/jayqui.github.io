@@ -70,7 +70,6 @@ var randomAdj = function() {
   document.getElementById('persev-adj').innerHTML = adjectives[Math.floor(Math.random()*adjectives.length)];
 };
 var sayWhere = function() {
-  // document.getElementById('place-made').style.color = "36417d";
   document.getElementById('place-made').innerHTML = "Chicago, Illinois and Dayton, Ohio";
 }
 var heartOfMidwest = function() {
