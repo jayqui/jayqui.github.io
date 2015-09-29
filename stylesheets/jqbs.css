@@ -207,6 +207,40 @@ figure:hover p mark {
 	font-size: 120%
 }
 
+.project-blurb {
+	text-align: center;
+	/*background: #36417d !important;*/
+	background: #e7f0f8 !important;
+	/*color: #36417d !important;*/
+	color: #000 !important;
+	padding: 50px !important;
+	font-size: 115% !important;
+	/*font-weight: bold;*/
+	/*min-width: 800px !important;*/
+}
+.ui-dialog-title {
+  width: 100% !important;
+}
+.ui-dialog-titlebar {
+  /*color: #337ab7 !important;*/
+  text-align: center;
+  color: #36417d !important;
+	font-size: 150% !important;
+	font-weight: bold;
+}
+.ui-widget-overlay {
+   /*background: #AAA url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;*/
+   /*opacity: .30;*/
+   /*background: #000 !important;*/
+   background: #36417d !important;
+   opacity: .80 !important;
+   /*filter: Alpha(Opacity=30);*/
+}
+.ui-dialog {
+	border: 6px solid black !important;
+	background: transparent !important;
+}
+
 .subjectbanner {
 	min-height: 200px;
 	padding-top: 79px;
