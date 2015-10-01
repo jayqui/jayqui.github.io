@@ -1,10 +1,12 @@
-$(document).ready(function() {
-  $("#making-verb").html(randomVerb());
-  $("#persev-adj").html(randomAdj());
+$(function() {
+  var currentVerb = randomVerb();
+  var currentAdj = randomAdj();
+  $("#making-verb").html(currentVerb);
+  $("#persev-adj").html(currentAdj);
+  newDistinctVerbOnHover(currentVerb);
+  newDistinctAdjOnHover(currentAdj);
 });
 
-document.getElementById('making-verb').onmouseover = function() {randomVerb()};
-document.getElementById('persev-adj').onmouseover = function() {randomAdj()};
 document.getElementById('place-made').onmouseover = function() {
   sayWhere();
   document.getElementById('place-made').style.color = "#36417d";
@@ -13,6 +15,38 @@ document.getElementById('place-made').onmouseout = function() {
   heartOfMidwest();
   document.getElementById('place-made').style.color = "#333333";
 };
+
+function findDistinctVerb(currentVerb) {
+  var newVerb = randomVerb();
+  while (currentVerb == newVerb) {
+    newVerb = randomVerb();
+  }
+  return newVerb;
+}
+function findDistinctAdj(currentAdj) {
+  var newAdj = randomAdj();
+  console.log("outside", currentAdj, newAdj);
+  while (currentAdj == newAdj) {
+    console.log("inside-1", currentAdj, newAdj);
+    newAdj = randomAdj();
+    console.log("inside-2", currentAdj, newAdj);
+  }
+  return newAdj;
+}
+function newDistinctVerbOnHover(currentVerb) {
+  $("#making-verb").on("mouseover",function() {
+    var newVerb = findDistinctVerb(currentVerb);
+    $(this).html(newVerb);
+    currentVerb = newVerb;
+  });
+}
+function newDistinctAdjOnHover(currentAdj) {
+  $("#persev-adj").on("mouseover",function() {
+    var newAdj = findDistinctAdj(currentAdj);
+    $(this).html(newAdj);
+    currentAdj = newAdj;
+  });
+}
 
 var verbs = [
   'Assembled',
@@ -64,10 +98,10 @@ var adjectives = [
   'zeal',
 ];
 var randomVerb = function() {
-  document.getElementById('making-verb').innerHTML = verbs[Math.floor(Math.random()*verbs.length)];
+  return verbs[Math.floor(Math.random()*verbs.length)];
 };
 var randomAdj = function() {
-  document.getElementById('persev-adj').innerHTML = adjectives[Math.floor(Math.random()*adjectives.length)];
+  return adjectives[Math.floor(Math.random()*adjectives.length)];
 };
 var sayWhere = function() {
   document.getElementById('place-made').innerHTML = "Chicago, Illinois and Dayton, Ohio";
