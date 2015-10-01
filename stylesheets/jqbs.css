@@ -53,7 +53,7 @@ img.keys {
 	width: 130px;
 }
 
-figure:hover img {
+.key-figure:hover img {
 	border: 3px solid #36417D;
 	border-radius: 20px;
 	opacity: 1;
@@ -90,7 +90,7 @@ figure:hover img {
 	text-shadow: none;
   font-family: "Century Gothic", "Century", sans-serif;
 }
-figure:hover p mark {
+.key-figure:hover p mark {
 	color: #B9B9BC;
   font-family: "Century Gothic", "Century", sans-serif;
 	color: #CFCFCF;
@@ -354,13 +354,27 @@ figure:hover p mark {
 	margin: 0;
 }
 
+.social-media-portal {
+	margin: 0 auto;
+	max-width: 635px;
+}
+.social-media-key-figure {
+	display: inline-block;
+}
+.social-media-key-figure p {
+	font-size: 100%;
+}
+.social-media-keys {
+	width: 80px;
+}
+
 footer {
 	background-color: rgb(210,210,210);
 }
 footer div p, footer div h3 {
 	margin-bottom: 0;
 	text-align: center;
-	padding: 1.8em;
+	padding: 1em;
 }
 footer p {
 	font-size: 1.3em;
