@@ -23,5 +23,13 @@ $(function() {
 			minWidth: 600,
 		});
 	});
+	$("#this-site-description").on("click", function(event) {
+		event.preventDefault();
+		$("#this-site-blurb").dialog({
+			modal: true,
+			resizable: true,
+			minWidth: 600,
+		});
+	});
 
 });
