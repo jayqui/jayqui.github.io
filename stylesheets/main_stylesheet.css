@@ -145,7 +145,7 @@ img.keys {
 	position: absolute;
 	padding: 0px;
 	width: 100%;
-	height: 85%;
+	height: 86%;
 	top: 0px;
 	left: 0px;
 	background: #36417d none repeat scroll 0% 0%;
@@ -155,7 +155,7 @@ img.keys {
 	transition: all 0.3s ease-out 0s;
 }
 #pollarity-cover {
-	height: 92%;
+	height: 87%;
 }
 .portf-item-cover:hover {
 	opacity: 0.85;
