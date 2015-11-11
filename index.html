@@ -7,7 +7,7 @@
     <!-- eliminates side whitespace in Firefox -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="stylesheets/main_stylesheet.css" rel='stylesheet' type='text/css'>
+    <link href="stylesheets/jqbs.css" rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'> <!--Google Fonts: Raleway-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> <!--Bootstrap CSS-->
     <link rel="stylesheet" href="stylesheets/jquery-ui.css"> <!-- jquery UI -->
@@ -111,14 +111,12 @@
 
     <!-- PORTFOLIO -->
     <div id="portfolio" class="portfolio">
+      <p class="portfolio-p1">Web Development: Group Projects</p>
       <div id="portf-container" class="container">
         <div class="row">
-          <p class="portfolio-p1">Web Development: Group Projects</p>
 
           <div class="portf-item col-sm-4">
-            <div class="portf-img-wrapper">
-              <img class="portf-img" src='images/pollarity_2.png'>
-            </div>
+            <img class="portf-img" src='images/pollarity.png'>
             <a target="_blank" href="http://pollarity.herokuapp.com">
               <div id="pollarity-cover" class="portf-item-cover">
                 <h2>Pollarity<br><small>Ruby on Rails, D3.js, Backbone.js</small></h2>
@@ -128,9 +126,7 @@
           </div>
 
           <div class="portf-item col-sm-4">
-            <div class="portf-img-wrapper">
-              <img class="portf-img" src='images/trollhunter.png'>
-            </div>
+            <img class="portf-img" src='images/trollhunter.png'>
             <a target="_blank" href="http://trollhunter.herokuapp.com">
               <div class="portf-item-cover" id="troll-hunter-cover">
                 <h2>Troll Hunter<br><small>Ruby, Sinatra</small></h2>
@@ -140,9 +136,7 @@
           </div>
 
           <div class="portf-item col-sm-4">
-            <div class="portf-img-wrapper">
-              <img class="portf-img" src='images/rottenpotatoes_2.png'>
-            </div>
+            <img class="portf-img" src='images/rottenpotatoes.png'>
             <a target="_blank" href="http://rotten-potatoes-2015.herokuapp.com">
               <div class="portf-item-cover">
                 <h2>Rotten Potatoes<br><small>Ruby on Rails</small></h2>
@@ -152,21 +146,12 @@
           </div>
         </div> <!-- end first row -->
 
-        <div class="row">
-          <p class="portfolio-p1">Web Development: Solo Projects</p>
+        <div class="project-blurb" id="pollarity-blurb" title="Pollarity" style="display:none">Pollarity is a web app that visualizes trends in state and national public opinion polls and attempts to predict future poll results. It uses data from the Huffington Post Pollster API, which is processed and served by a Rails back end to the Backbone.js-powered front end. It uses D3.js to bring that data to life in animated line graphs, bar graphs, and an interactive map of the US. <br><br><small>Technologies: Ruby on Rails, Backbone.js, D3.js, Datamaps, jQuery UI, HTML/CSS</small></div>
 
-          <div class="portf-item col-sm-4">
-            <div class="portf-img-wrapper">
-              <img class="portf-img" src='images/this_site.png'>
-            </div>
-              <div id="this-site-cover" class="portf-item-cover">
-                <h2>This site<br><small>Bootstrap, JavaScript, jQuery, jQuery UI</small></h2>
-              </div>
-            <div class="source-description-links"><a target="_blank" href="https://github.com/jayqui/jayqui.github.io">Source</a> 
-              <!-- | <a id="this-site-description" class="description-link" href="#">Description</a> -->
-            </div>
-          </div>
-        </div> <!-- end second row -->
+        <div class="project-blurb" id="trollhunter-blurb" title="Troll Hunter" style="display:none">Troll Hunter is a collection of the most provocative reviews of Chicago restaurants found on Yelp. We scraped Yelp's website and scored reviews using a hilarious-keyword-matching algorithm. <br><br><small>Technologies: Ruby, Sintara, Nokogiri, HTML/CSS</small></div>
+
+        <div class="project-blurb" id="rotpot-blurb" title="Rotten Potatoes" style="display:none">A sample website for movie reviews and ratings. <br><br><small>Technologies: Ruby on Rails, HTML/CSS</small></div>
+
       </div>
       <p class="portfolio-p2">
         More coming soon......

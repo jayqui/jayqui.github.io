@@ -8,7 +8,7 @@ html, body {
 }
 header {
 	min-height: 800px;
-	background-image: url("../images/JQ_portrait/JQ1.2 patch_5.png");
+	background-image: url("../images/JQ1.2 patch_5.png");
 	background-color: transparent;
 	background-attachment: fixed;
 	background-size: 45%;
@@ -137,9 +137,6 @@ img.keys {
 }
 .portf-img {
 	width: 100%;
-}
-.portf-img-wrapper {
-	min-height: 234px;
 }
 .portf-item {
 }
