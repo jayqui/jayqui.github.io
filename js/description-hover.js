@@ -31,5 +31,13 @@ $(function() {
 			minWidth: 600,
 		});
 	});
+	$("#qool-quotes-description").on("click", function(event) {
+		event.preventDefault();
+		$("#qool-quotes-blurb").dialog({
+			modal: true,
+			resizable: true,
+			minWidth: 600,
+		});
+	});
 
 });
