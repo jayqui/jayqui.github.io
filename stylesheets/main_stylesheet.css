@@ -55,7 +55,7 @@ img.keys {
 }
 
 .key-figure:hover img {
-	border: 3px solid #36417D;
+	background: #36417D;
 	border-radius: 20px;
 	opacity: 1;
 	transform: scale(0.93);
