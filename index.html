@@ -22,6 +22,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> <!--Bootstrap JS-->
     <script src="js/jquery-ui.min.js"></script>  <!--jQuery UI-->
     <script src="js/description-hover.js"></script>
+    <script src="js/key-images.js"></script>
   </head>
 
   <body>
@@ -39,7 +40,7 @@
         <div class="row">
           <div class="col-sm-2">
             <a href="#bio">
-              <figure class="key-figure"onmouseover="this.children[0].src = 'images/keys/JQ_no_border.png'" onmouseout="this.children[0].src='images/keys/JQ_shadow.png'">
+              <figure id="JQ-figure" class="key-figure">
                 <img id="jq-key" class="keys img-responsive center-block" src="images/keys/JQ_shadow.png" href="$">
                 <p><mark>bio</mark></p>
               </figure>
@@ -47,7 +48,7 @@
           </div>
           <div class="col-sm-2">
             <a href="#portfolio">
-              <figure class="key-figure" onmouseover="this.children[0].src = 'images/keys/WEB_no_border.png'" onmouseout="this.children[0].src='images/keys/WEB_shadow.png'">
+              <figure id="WEB-figure" class="key-figure">
                 <img class="keys img-responsive center-block" src="images/keys/WEB_shadow.png" href="$">
                 <p><mark>portfolio</mark></p>
               </figure>
@@ -55,7 +56,7 @@
           </div>
           <div class="col-sm-2">
             <a target="_blank" href="resume.pdf">
-              <figure class="key-figure" onmouseover="this.children[0].src = 'images/keys/PDF_no_border.png'" onmouseout="this.children[0].src='images/keys/PDF_shadow.png'">
+              <figure id="PDF-figure" class="key-figure">
                 <img class="keys img-responsive center-block" src="images/keys/PDF_shadow.png" href="$">
                 <p><mark>r&eacute;sum&eacute;</mark></p>
               </figure>
@@ -66,7 +67,7 @@
           <div id="keyboard-spacer" class="col-sm-1"></div>
           <div class="col-sm-2">
             <a href="#eabanner">
-              <figure class="key-figure" onmouseover="this.children[0].src = 'images/keys/EA_no_border.png'" onmouseout="this.children[0].src='images/keys/EA_shadow.png'">
+              <figure id="EA-figure" class="key-figure">
                 <img class="keys img-responsive center-block" src="images/keys/EA_shadow.png" href="$">
                 <p><mark>effective altruism</mark></p>
               </figure>
@@ -74,7 +75,7 @@
           </div>
           <div class="col-sm-2" >
             <a href="#other">
-              <figure class="key-figure" onmouseover="this.children[0].src = 'images/keys/phi_no_border.png'" onmouseout="this.children[0].src='images/keys/phi_shadow.png'">
+              <figure id="phi-figure" class="key-figure">
                 <img class="keys img-responsive center-block" src="images/keys/phi_shadow.png" href="$">
                 <p><mark>philosophy &amp; other interests</mark></p>
               </figure>
@@ -82,7 +83,7 @@
           </div>
           <div class="col-sm-2">
             <a href="#contact">
-              <figure class="key-figure" onmouseover="this.children[0].src = 'images/keys/Hi_no_border.png'" onmouseout="this.children[0].src='images/keys/Hi_shadow.png'">
+              <figure id="Hi-figure" class="key-figure">
                 <img class="keys img-responsive center-block" src="images/keys/Hi_shadow.png" href="$">
                 <p><mark>contact</mark></p>
               </figure>
