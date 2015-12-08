@@ -1,4 +1,4 @@
-var tagNames =  ["#pollarity", "#trollhunter", "#rotpot", "#this-site", "#qool-quotes"];
+var tagNames =  ["#pollarity", "#trollhunter", "#rotpot", "#youtube-game", "#this-site", "#qool-quotes"];
 
 $(function() {
 	tagNames.forEach(function(element) {
