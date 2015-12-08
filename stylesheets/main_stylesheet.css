@@ -54,13 +54,6 @@ img.keys {
 	width: 130px;
 }
 
-.key-figure:hover img {
-	border: 1px solid #36417D;
-	border-radius: 20px;
-	opacity: 1;
-	transform: scale(0.93);
-}
-
 .portf-img {
 	width: 100%;
 }
@@ -351,6 +344,12 @@ img.keys {
 .social-media-portal {
 	margin: 0 auto;
 	max-width: 635px;
+}
+.social-media-key-figure:hover img {
+	border: 1px solid #36417D;
+	border-radius: 20px;
+	opacity: 1;
+	transform: scale(0.93);
 }
 .social-media-key-figure {
 	display: inline-block;
