@@ -361,8 +361,15 @@
           <br>
           <br>
           <p>
-            &copy; Jay Quigley, 2015 | <span id="making-verb">_</span> with <span id="persev-adj">_</span> in <span id="place-made">the heart of the Midwest</span>.
+            &copy; Jay Quigley, <span id="year">2015</span>  | <span id="making-verb">_</span> with <span id="persev-adj">_</span> in <span id="place-made">the heart of the Midwest</span>.
           </p>
+
+          <!-- auto-update year -->
+          <script>
+          var year = new Date().getFullYear();
+          document.getElementById("year").innerText = year;
+          </script>
+
           <br>
 
           <script type="text/javascript" src="js/wordplay.js"></script>
