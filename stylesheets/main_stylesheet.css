@@ -342,16 +342,16 @@ img.keys {
 	margin: 0;
 }
 .music-box {
-	margin-top: 5px;
+	margin-top: 10px;
 	max-height: 333px;
 	overflow: auto;
 }
 .wrapper {
-	margin-top: 5px;
+	margin-top: 10px;
 }
 #jay-frisbee {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(65%);
+	filter: grayscale(65%);
 }
 
 .social-media-portal {
