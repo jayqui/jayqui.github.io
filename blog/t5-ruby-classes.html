@@ -50,6 +50,8 @@
         attr_reader :name, :breed
         attr_accessor :age, :length, :height, :weight
 
+        CALLS_BY_BREED = {"Collie" => "Woof!", "Dachshund" => "Arf!", "Rottweiler" => "Grrr...", "Saint Bernard" => "Bow Wow!"}
+
         def initialize(name, breed="", age=1, length=90, height=30, weight=9)
           @name = name.capitalize
           @breed = breed.capitalize
@@ -63,9 +65,8 @@
           "A #{@breed} dog named #{@name} aged #{@age} years, measuring #{@length} by #{@height} cm and weighing #{@weight} kg."
         end
 
-        @@calls_by_breed = {"Collie" => "Woof!", "Dachshund" => "Arf!", "Rottweiler" => "Grrr...", "Saint Bernard" => "Bow Wow!"}
         def speak
-          "#{@name} says #{@@calls_by_breed[@breed]}!"
+          "#{@name} says #{CALLS_BY_BREED[@breed]}!"
         end
 
         def growth_hormone
