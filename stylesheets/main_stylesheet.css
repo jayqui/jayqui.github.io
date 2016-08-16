@@ -144,7 +144,7 @@ img.keys {
 	position: absolute;
 	padding: 0px;
 	width: 92%;
-	height: 86%;
+	height: 80%;
 	margin: 0 4%;
 	top: 0px;
 	left: 0px;
@@ -154,10 +154,9 @@ img.keys {
 	opacity: 0;
 	transition: all 0.3s ease-out 0s;
 }
-#pollarity-cover {height: 87%;}
-#youtube-game-cover {height: 85%}
-#this-site-cover {height: 87%;}
-#qool-quotes-cover {height: 83%}
+#pollarity-cover {height: 81%;}
+#this-site-cover {height: 82%;}
+#qool-quotes-cover {height: 77%}
 .portf-item-cover:hover {
 	opacity: 0.85;
 }
