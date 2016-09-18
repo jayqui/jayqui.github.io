@@ -1,4 +1,5 @@
 <script type="text/javascript">
+
 var homepages = [
   'http://www.nytimes.com',
   // 'http://www.reuters.com',
@@ -9,17 +10,15 @@ var homepages = [
   // 'http://www.theguardian.com/world/animal-welfare',
   'http://www.effective-altruism.com/',
   'https://news.ycombinator.com/',
-  // 'http://www.builtinchicago.org/jobs#/jobs?f%5B%5D=tags%3ARuby%7Cim_job_categories%3A10635%3Aterm',
-  // 'http://www.builtinaustin.com/jobs#/jobs?f%5B%5D=tags%3ARuby%7Cim_job_categories%3A5539%3Aterm',
-  // 'http://www.builtinla.com/jobs#/jobs?f%5B%5D=tags%3ARuby%7Cim_job_categories%3A5539%3Aterm',
   'https://www.quora.com/What-are-the-best-job-boards-for-software-engineers/answer/Vladik-Rikhter?srid=zm8X',
   'https://stackoverflow.com/jobs?searchTerm=ruby&location=oakland&range=20&distanceUnits=Miles&sort=p',
   'https://www.jrdevjobs.com/jobs',
   'https://www.cybercoders.com/search/?searchterms=Ruby&searchlocation=San+Francisco%2C+CA&newsearch=true&sorttype=date',
   'https://jobs.github.com/positions?description=ruby&location=san+francisco&full_time=on',
   'http://www.berkeleyside.com/all-the-news/',
+  'http://www.berkeleydailyplanet.com/',
 ];
 
-var randnum = 0 + Math.floor(Math.random()*homepages.length);
-window.location=homepages[randnum];
+window.location = homepages[Math.floor(Math.random() * homepages.length)];
+
 </script>
