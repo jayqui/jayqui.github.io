@@ -1,40 +1,5 @@
 <script type="text/javascript">
-
-var homepages = [
-
-  // // WORLD NEWS
-  // 'http://www.economist.com',
-  // // 'http://www.reuters.com',
-
-  // // US NEWS
-  // 'http://www.nytimes.com',
-  // // 'http://www.npr.org',
-
-  // // CALIFORNIA NEWS
-  // 'http://capitolweekly.net/',
-  // 'http://www.sacbee.com/news/politics-government/',
-  // 'http://www.latimes.com/politics/essential/',
-  // 'http://www.mercurynews.com/news/politics/',
-
-  // // BAY AREA NEWS
-  // 'http://www.sfchronicle.com/local/bayarea/',
-
-  // // BERKELEY & EAST BAY NEWS
-  // 'http://www.eastbayexpress.com/',
-  // 'http://www.eastbaytimes.com/',
-  // 'http://www.berkeleyside.com/all-the-news/',
-  // 'http://www.berkeleydailyplanet.com/',
-  // 'http://www.dailycal.org/',
-
-  // VEGAN HEALTH, FITNESS, NUTRITION
-
-
-  // NOTICIAS DE COSTA RICA
-  // 'http://www.nacion.com',
-
-  // TECH NEWS
-  // 'https://news.ycombinator.com/',
-
+var coolPages = [
   // ANIMAL RIGHTS NEWS
   'http://www.gfi.org/blog',
   // http://www.huffingtonpost.com/news/animal-rights/
@@ -43,7 +8,9 @@ var homepages = [
   // EFFECTIVE ALTRUISM
   'http://www.effective-altruism.com/',
   // 'http://philanthropy.com/section/Home/172',
+]
 
+var jobPages = [
   // ANIMAL RIGHTS JOBS
   'http://www.gfi.org/jobs',
   'https://animalcharityevaluators.org/about/meet-our-team/join-our-team/',
@@ -66,7 +33,7 @@ var homepages = [
   'http://dotimpact.im/jobs.html',
   'https://angel.co/center-for-applied-rationality-1/jobs',
   'http://www.charityscience.com/our-team.html',
-  'http://www.charitysciencehealth.com/jobs.html',
+  'http://www.charitysciencehealth.com/about.html',
 
   // FOOD TECH JOBS
   'https://boards.greenhouse.io/impossiblefoods',
@@ -84,6 +51,62 @@ var homepages = [
   // 'https://jobs.github.com/positions?description=ruby&location=san+francisco&full_time=on',
 ];
 
-window.location = homepages[Math.floor(Math.random() * homepages.length)];
+var newsPages = [
+  // WORLD NEWS
+  'http://www.economist.com',
+  // 'http://www.reuters.com',
+
+  // US NEWS
+  'http://www.nytimes.com',
+  // 'http://www.npr.org',
+
+  // CALIFORNIA NEWS
+  'http://capitolweekly.net/',
+  'http://www.sacbee.com/news/politics-government/',
+  'http://www.latimes.com/politics/essential/',
+  'http://www.mercurynews.com/news/politics/',
+
+  // BAY AREA NEWS
+  'http://www.sfchronicle.com/local/bayarea/',
+
+  // BERKELEY & EAST BAY NEWS
+  'http://www.eastbayexpress.com/',
+  'http://www.eastbaytimes.com/',
+  'http://www.berkeleyside.com/all-the-news/',
+  'http://www.berkeleydailyplanet.com/',
+  'http://www.dailycal.org/',
+
+  // VEGAN HEALTH, FITNESS, NUTRITION
+
+
+  // NOTICIAS DE COSTA RICA
+  // 'http://www.nacion.com',
+
+  // TECH NEWS
+  'https://news.ycombinator.com/',
+
+  // ANIMAL RIGHTS NEWS
+  'http://www.gfi.org/blog',
+  // http://www.huffingtonpost.com/news/animal-rights/
+  // https://www.theguardian.com/world/animal-welfare
+
+  // EFFECTIVE ALTRUISM
+  'http://www.effective-altruism.com/',
+  // 'http://philanthropy.com/section/Home/172',
+];
+
+var now = new Date();
+var weekday = now.getDay() > 0 && now.getDay() < 6;
+var businessHours = now.getHours() >= 9 && now.getHours() < 17;
+
+if (weekday && businessHours) {
+  window.location = randomURL(newsPages.concat(coolPages));
+} else {
+  window.location = randomURL(jobPages.concat(coolPages));
+}
+
+function randomURL(urlsArray) {
+  return urlsArray[Math.floor(Math.random() * urlsArray.length)];
+}
 
 </script>
