@@ -135,7 +135,12 @@ var businessHours = now.getHours() >= 9 && now.getHours() < 17;
 if (weekday && businessHours) {
   window.location = randomURL(newsPages.concat(coolPages));
 } else {
-  window.location = randomURL(jobPages.concat(coolPages));
+  var jobsSheet = 'https://docs.google.com/spreadsheets/d/11X12pcyhtRtrLCgerE-Hwe_Sb8prvGBuSMZ5r5e2lPo/edit#gid=0';
+  var randomJobPage = randomURL(jobPages.concat(coolPages));
+  var options = [randomJobPage, jobsSheet];
+
+  // randomly select between my jobsSheet and a randomJobPage
+  window.location = options[Math.floor(Math.random() * options.length)];
 }
 
 function randomURL(urlsArray) {
