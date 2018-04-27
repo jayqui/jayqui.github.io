@@ -38,6 +38,7 @@ var jobPages = [
   'http://www.charityscience.com/our-team.html',
   'https://www.charitysciencehealth.com/jobs.html',
   'http://existence.org/jobs/',
+  'https://www.chanzuckerberg.com/careers',
 
   // FOOD TECH JOBS
   'https://boards.greenhouse.io/impossiblefoods',
@@ -136,10 +137,11 @@ if (weekday && businessHours) {
   window.location = randomURL(newsPages.concat(coolPages));
 } else {
   var jobsSheet = 'https://docs.google.com/spreadsheets/d/11X12pcyhtRtrLCgerE-Hwe_Sb8prvGBuSMZ5r5e2lPo/edit#gid=0';
+  var albumLyrics = 'https://docs.google.com/document/d/1ZAmgg99IK_6lx3CfrfphITgDUuKwN5djo2RmJThy40Q/edit#';
   var randomJobPage = randomURL(jobPages.concat(coolPages));
-  var options = [randomJobPage, jobsSheet];
+  var options = [randomJobPage, jobsSheet, albumLyrics];
 
-  // randomly select between my jobsSheet and a randomJobPage
+  // sample from the options array
   window.location = options[Math.floor(Math.random() * options.length)];
 }
 
