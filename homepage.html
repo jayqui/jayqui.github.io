@@ -137,13 +137,16 @@ var businessHours = now.getHours() >= 9 && now.getHours() < 17;
 if (weekday && businessHours) {
   window.location = randomURL(newsPages.concat(coolPages));
 } else {
+  var randomJobPage = randomURL(jobPages.concat(coolPages));
   var jobsSheet = 'https://docs.google.com/spreadsheets/d/11X12pcyhtRtrLCgerE-Hwe_Sb8prvGBuSMZ5r5e2lPo/edit#gid=0';
   var albumLyrics = 'https://docs.google.com/document/d/1B2uEglQrtJbt5eK9UIGtmNa531Tjq_WDkxGuC1e5hR4/edit';
-  var randomJobPage = randomURL(jobPages.concat(coolPages));
-  var options = [randomJobPage, jobsSheet, albumLyrics];
+  var dataSciencePrograms = 'https://docs.google.com/spreadsheets/d/1gLtcCWaFe4BjXSvaMq7xceHtpv8yjh30JuCPCxCuV4Q/edit#gid=0';
+  var educationBudgetIdeas = 'https://docs.google.com/spreadsheets/d/1YCg7RRR0Mdf4XB6B9IXjoDmED9LJqV0wxjp3Qymtnw8/edit#gid=295020488';
 
-  // sample from the options array
-  window.location = options[Math.floor(Math.random() * options.length)];
+  var nonBusinessHoursOptions = [randomJobPage, jobsSheet, albumLyrics, dataSciencePrograms, educationBudgetIdeas];
+
+  // sample from the nonBusinessHoursOptions array
+  window.location = randomURL(nonBusinessHoursOptions);
 }
 
 function randomURL(urlsArray) {
