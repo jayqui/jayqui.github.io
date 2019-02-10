@@ -1,4 +1,9 @@
+<strong>finna visit a random website in 1 second . . .</strong>
+
 <script type="text/javascript">
+
+console.log('hello from top of script');
+
 var coolPages = [
   // ANIMAL RIGHTS NEWS
   'http://www.gfi.org/blog',
@@ -140,7 +145,7 @@ var weekday = now.getDay() > 0 && now.getDay() < 6;
 var businessHours = now.getHours() >= 9 && now.getHours() < 17;
 
 if (weekday && businessHours) {
-  window.location = randomURL(newsPages.concat(coolPages));
+  setTimeout(visitBusinessHoursUrl, 1500);
 } else {
   var randomJobPage = randomURL(jobPages.concat(coolPages));
   var jobsSheet = 'https://docs.google.com/spreadsheets/d/11X12pcyhtRtrLCgerE-Hwe_Sb8prvGBuSMZ5r5e2lPo/edit#gid=0';
@@ -149,12 +154,24 @@ if (weekday && businessHours) {
 
   var nonBusinessHoursOptions = [randomJobPage, jobsSheet, albumLyrics, dataSciencePrograms];
 
-  // sample from the nonBusinessHoursOptions array
-  window.location = randomURL(nonBusinessHoursOptions);
+  setTimeout(visitNonBusinessHoursUrl, 1500)
 }
+
 
 function randomURL(urlsArray) {
   return urlsArray[Math.floor(Math.random() * urlsArray.length)];
+}
+
+function visitRandomUrl(urlsArray) {
+  window.location = randomURL(urlsArray);
+}
+
+function visitBusinessHoursUrl() {
+  visitRandomUrl(newsPages.concat(coolPages));
+}
+
+function visitNonBusinessHoursUrl() {
+  visitRandomUrl(nonBusinessHoursOptions);
 }
 
 </script>
