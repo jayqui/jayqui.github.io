@@ -1,3 +1,5 @@
+<strong>finna visit a random website in 1 second . . .</strong>
+
 <script type="text/javascript">
 var coolPages = [
   // ANIMAL RIGHTS NEWS
@@ -72,6 +74,11 @@ var jobPages = [
   "https://www.pandora.com/careers/all",
   "https://www.spotifyjobs.com/job-category/engineering-it/#location=san-francisco",
 
+  // LEGISLATIVE JOBS
+  // 'https://www.tommanatosjobs.com/JobSearch.aspx?t=1',
+  'https://www.assembly.ca.gov/assemblyjobs',
+  'https://www.senate.ca.gov/senatejobs',
+
   // SOFTWARE JOBS, GENERAL
   // 'https://www.quora.com/What-are-the-best-job-boards-for-software-engineers/answer/Vladik-Rikhter?srid=zm8X',
   // 'https://stackoverflow.com/jobs?searchTerm=ruby&location=oakland&range=20&distanceUnits=Miles&sort=p',
@@ -140,22 +147,33 @@ var weekday = now.getDay() > 0 && now.getDay() < 6;
 var businessHours = now.getHours() >= 9 && now.getHours() < 17;
 
 if (weekday && businessHours) {
-  window.location = randomURL(newsPages.concat(coolPages));
+  setTimeout(visitBusinessHoursUrl, 1500);
 } else {
   var randomJobPage = randomURL(jobPages.concat(coolPages));
   var jobsSheet = 'https://docs.google.com/spreadsheets/d/11X12pcyhtRtrLCgerE-Hwe_Sb8prvGBuSMZ5r5e2lPo/edit#gid=0';
   var albumLyrics = 'https://docs.google.com/document/d/1B2uEglQrtJbt5eK9UIGtmNa531Tjq_WDkxGuC1e5hR4/edit';
   var dataSciencePrograms = 'https://docs.google.com/spreadsheets/d/1gLtcCWaFe4BjXSvaMq7xceHtpv8yjh30JuCPCxCuV4Q/edit#gid=0';
-  var publicPolicyPrograms = 'https://docs.google.com/spreadsheets/d/1iHAet48YgPfmXlxSgniixnEO6iXwuAZ9tE4Hirz9_Eo/edit#gid=0';
 
-  var nonBusinessHoursOptions = [randomJobPage, jobsSheet, albumLyrics, dataSciencePrograms, publicPolicyPrograms];
+  var nonBusinessHoursOptions = [randomJobPage, jobsSheet, albumLyrics, dataSciencePrograms];
 
-  // sample from the nonBusinessHoursOptions array
-  window.location = randomURL(nonBusinessHoursOptions);
+  setTimeout(visitNonBusinessHoursUrl, 1500)
 }
+
 
 function randomURL(urlsArray) {
   return urlsArray[Math.floor(Math.random() * urlsArray.length)];
+}
+
+function visitRandomUrl(urlsArray) {
+  window.location = randomURL(urlsArray);
+}
+
+function visitBusinessHoursUrl() {
+  visitRandomUrl(newsPages.concat(coolPages));
+}
+
+function visitNonBusinessHoursUrl() {
+  visitRandomUrl(nonBusinessHoursOptions);
 }
 
 </script>
