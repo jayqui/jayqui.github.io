@@ -7,7 +7,7 @@ html, body {
   overflow-x: hidden !important;
 }
 header {
-	min-height: 800px;
+	min-height: 500px;
 	background-image: url("../images/JQ_portrait/JQ1.2 patch_5 - 40pct.png");
 	background-color: transparent;
 	background-attachment: fixed;
