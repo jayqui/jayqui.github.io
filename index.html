@@ -21,9 +21,6 @@
     <meta name="msapplication-TileImage" content="favicon.png">
 
     <script src="js/jquery-1.11.3.min.js"></script>  <!--jQuery-->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> <!--Bootstrap JS-->
-    <script src="js/jquery-ui.min.js"></script>  <!--jQuery UI-->
-    <script src="js/key-images.js"></script>
   </head>
 
   <body>
@@ -48,10 +45,18 @@
             </a>
           </div>
           <div class="col-sm-2">
-            <a href="#contact">
-              <figure id="Hi-figure" class="key-figure">
-                <img class="keys img-responsive center-block" src="images/keys/Hi_shadow.png" href="$">
-                <p><mark>contact</mark></p>
+            <a target="_blank" href="https://github.com/jayqui">
+              <figure class="key-figure">
+                <img class="keys img-responsive center-block" src="images/keys/GITHUB.png" href="$">
+                <p><mark>GitHub</mark></p>
+              </figure>
+            </a>
+          </div>
+          <div class="col-sm-2">
+            <a target="_blank" href="https://www.linkedin.com/in/jamesgquigley">
+              <figure class="key-figure">
+                <img class="keys img-responsive center-block" src="images/keys/LINKEDIN.png" href="$">
+                <p><mark>LinkedIn</mark></p>
               </figure>
             </a>
           </div>
@@ -59,40 +64,22 @@
       </div>
     </header>
 
-    <footer class="row" id="contact">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8">
-        <div class="social-media-portal">
-          <a target="_blank" href="https://github.com/jayqui">
-            <figure class="key-figure social-media-key-figure">
-              <img id="jq-key" class="social-media-keys img-responsive center-block" src="images/keys/GITHUB.png" href="$">
-              <p><mark>GitHub</mark></p>
-            </figure>
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/jamesgquigley">
-            <figure class="key-figure social-media-key-figure">
-              <img id="jq-key" class="social-media-keys img-responsive center-block" src="images/keys/LINKEDIN.png" href="$">
-              <p><mark>LinkedIn</mark></p>
-            </figure>
-          </a>
-        </div>
+    <footer class="row">
+      <p>
+        &copy; Jay Quigley,
+        <span id="year">2015</span>  |
+        <span id="making-verb">_</span> with
+        <span id="persev-adj">_</span> in
+        <span id="place-made">the heart of the Midwest</span>.
+      </p>
 
-        <p>
-          &copy; Jay Quigley, <span id="year">2015</span>  | <span id="making-verb">_</span> with <span id="persev-adj">_</span> in <span id="place-made">the heart of the Midwest</span>.
-        </p>
-
-        <!-- auto-update year -->
-        <script>
+      <!-- auto-update year -->
+      <script>
         var year = new Date().getFullYear();
         document.getElementById("year").innerText = year;
-        </script>
+      </script>
 
-        <br>
-
-        <script type="text/javascript" src="js/wordplay.js"></script>
-
-      </div>
-      <div class="col-sm-2"></div>
+      <script type="text/javascript" src="js/wordplay.js"></script>
     </footer>
 
   </body>
