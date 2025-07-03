@@ -1,8 +1,8 @@
-$(function() {
+document.addEventListener('DOMContentLoaded', function() {
   var currentVerb = randomVerb();
   var currentAdj = randomAdj();
-  $("#making-verb").html(currentVerb);
-  $("#persev-adj").html(currentAdj);
+  document.getElementById('making-verb').innerHTML = currentVerb;
+  document.getElementById('persev-adj').innerHTML = currentAdj;
 
   newDistinctVerbOnHover(currentVerb);
   newDistinctAdjOnHover(currentAdj);
@@ -26,28 +26,34 @@ function findDistinctAdj(currentAdj) {
   return newAdj;
 }
 function newDistinctVerbOnHover(currentVerb) {
-  $("#making-verb").on("mouseover",function() {
+  var makingVerbElem = document.getElementById('making-verb');
+  makingVerbElem.addEventListener('mouseover', function() {
     var newVerb = findDistinctVerb(currentVerb);
-    $(this).html(newVerb);
+    this.innerHTML = newVerb;
     currentVerb = newVerb;
   });
 }
 function newDistinctAdjOnHover(currentAdj) {
-  $("#persev-adj").on("mouseover",function() {
+  var persevAdjElem = document.getElementById('persev-adj');
+  persevAdjElem.addEventListener('mouseover', function() {
     var newAdj = findDistinctAdj(currentAdj);
-    $(this).html(newAdj);
+    this.innerHTML = newAdj;
     currentAdj = newAdj;
   });
 }
 
 function identifyHeartOfMidwestOnMouseEnter() {
-  $("#place-made").on("mouseenter", function(){
-    $(this).html("Chicago, Illinois and Dayton, Ohio").css("color", "#36417d");
+  var placeMadeElem = document.getElementById('place-made');
+  placeMadeElem.addEventListener('mouseenter', function() {
+    this.innerHTML = 'Chicago, Illinois and Dayton, Ohio';
+    this.style.color = '#36417d';
   });
 }
 function backtoHeartOfMidwestOnMouseOut() {
-  $("#place-made").on("mouseout", function(){
-    $(this).html("the heart of the Midwest").css("color", "initial");
+  var placeMadeElem = document.getElementById('place-made');
+  placeMadeElem.addEventListener('mouseout', function() {
+    this.innerHTML = 'the heart of the Midwest';
+    this.style.color = '';
   });
 }
 
